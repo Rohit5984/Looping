@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void printEvenSeries(int n);
+
+int main() {
+    int n = 16;   // number of terms
+    printEvenSeries(n);
+    return 0;
+}
+
+void printEvenSeries(int n) {
+    printf("Even series up to %d terms: ", n);
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", 2 * i);   // nth even number = 2*i
+    }
+    printf("\n");
+}
