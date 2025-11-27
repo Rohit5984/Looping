@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void printSeries(int n);
+
+int main() {
+    int n = 16;   // fixed upper limit
+    printSeries(n);
+    return 0;
+}
+
+void printSeries(int n) {
+    printf("Series from 2 to %d: ", n);   // print heading once
+    for (int i = 2; i <= n; i=i+2) {
+        printf("%d ", i);   // just print numbers with space
+    }
+    printf("\n");   // final newline after the series
+}
+
+/* Example Output => Series from 2 to 16: 2 4 6 8 10 12 14 16 */
