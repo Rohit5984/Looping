@@ -1,3 +1,4 @@
+/* Use formula for n-th term of arithmetic series: tn=a+(n-1)d where tn means last term=45,a=first term=5 */
 #include <stdio.h>
 
 void printSeries(int n);
