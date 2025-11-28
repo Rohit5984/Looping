@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void printSeries(int n);
+
+int main() {
+    int n = 9;   // number of terms
+    printSeries(n);
+    return 0;
+}
+
+void printSeries(int n) {
+    int term = 5;  // first term
+    printf("Series: ");
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", term);
+        term += 5;  // add common difference
+    }
+    printf("\n");
+}
