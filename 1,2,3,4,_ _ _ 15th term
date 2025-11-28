@@ -1,3 +1,25 @@
+                         Best method 
+#include <stdio.h>
+
+void printSeries(int n);
+
+int main() {
+    int n = 15;   // number of terms
+    printSeries(n);
+    return 0;
+}
+
+void printSeries(int n) {
+    int term = 1;   // starting number
+
+    printf("Series up to %d terms: ", n);
+
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", term);
+        term=term+1;     
+    }
+}
+          Another method 
 #include <stdio.h>
 
 void printOddSeries(int n);
