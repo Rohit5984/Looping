@@ -9,9 +9,11 @@ int main() {
 }
 
 void printSeries(int n) {
+	int term=5;
     printf("Series up to %d terms: ", n);
     for (int i = 1; i <= n; i++) {
-        printf("%d ", 5 * i);   // prints 5,10,15,...
+        printf("%d ", term); 
+		  term=term+5;
     }
     printf("\n");
 }
