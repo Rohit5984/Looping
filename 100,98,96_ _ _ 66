@@ -1,0 +1,22 @@
+/* Use formula for n-th term of arithmetic series: tn=a+(n-1)d where tn means last term=66,a=first term=100,
+common difference(d)= 2nd-1st = 98-100=-2 */
+
+#include <stdio.h>
+
+void printSeries(int n);
+
+int main() {
+    int n = 18;   // number of terms
+    printSeries(n);
+    return 0;
+}
+
+void printSeries(int n) {
+    int term = 100;  // first term
+    printf("Series: ");
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", term);
+        term = term - 2;
+    }
+    printf("\n");
+}
