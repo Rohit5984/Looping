@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+void printSeries(int n);
+
+int main() {
+    int n = 15;   // number of terms
+    printSeries(n);
+    return 0;
+}
+
+void printSeries(int n) {
+    int term = 100;   // starting number
+
+    printf("Series up to %d terms: ", n);
+
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", term);
+        term--;     // decrease by 1 each time
+    }
+
+    printf("\n15th term = %d\n", term + 1);  // prints 86
+}
