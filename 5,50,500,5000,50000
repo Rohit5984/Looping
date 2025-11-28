@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void printSeries(int n);
+
+int main() {
+    int n = 5;   // number of terms
+    printSeries(n);
+    return 0;
+}
+
+void printSeries(int n) {
+    printf("Series: ");
+    int term = 5;
+
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", term);
+        term = term * 10;   // multiply by 10 each time
+    }
+
+    printf("\n");
+}
